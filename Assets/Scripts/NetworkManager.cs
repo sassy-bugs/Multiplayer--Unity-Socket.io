@@ -134,6 +134,8 @@ public class NetworkManager : MonoBehaviour
 		playerName.text = currentUserJSON.name;
 		pc.isLocalPlayer = true;
 		p.name = currentUserJSON.name;
+
+        //initialize marker for minimap
     }
     void OnPlayerMove(SocketIOEvent socketIOEvent)
     {
